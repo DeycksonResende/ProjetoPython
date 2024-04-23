@@ -16,7 +16,7 @@ def buscar_noticias(cidade):
     html = driver.page_source    
     soup = BeautifulSoup(html, 'html.parser')
     
-    noticias = soup.find_all('h3', class_='ipQwMb ekueJc RD0gLb')
+    noticias = soup.find_all('h3', class_='PO9Zff kUVvS')
 
     for noticia in noticias:
         print(noticia.text)
