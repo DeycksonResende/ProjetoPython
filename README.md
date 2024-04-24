@@ -8,7 +8,8 @@ Testes de Usabilidade
 Reconhecemos a importância da funcionalidade e da atualização contínua dos dados, especialmente considerando que nossa API fornece informações em tempo real. Como resultado, estaremos constantemente realizando testes em nosso algoritmo para garantir sua eficiência e precisão. Estamos comprometidos em garantir uma experiência de usuário fluida e confiável.
 '
 NOMES E RMS
-Deyckson Roberto de Resende - RM 553607
+
+Deyckson Roberto de Resssende - RM 553607
 
 Rafael Vida Fernandes - RM 553721
 
