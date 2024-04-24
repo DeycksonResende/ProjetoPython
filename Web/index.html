@@ -5,25 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/style.css">
-    <title>Document</title>
+    <title>Previsão do Tempo</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <img class="logo" src="/Web/image/LOGO.png" alt="Logo">
-    </header>
 
     <main>
         <section class="imagem-do-clima">
             <div class="busca-cidade">
                 <h1>De qual cidade você quer ver a previsão hoje?</h1>
                 <div class="barra-de-pesquisa">
-                    <input class="barra-de-pesquisa-text" type="text" id="text" placeholder="EX Buscar São Paulo">
-                    <a class="barra-pesquisa-btn" href="">
-                        <img class="lupa-blue" src="./image/loupe-blue.svg" alt="" width="25px" height="25px">
-                        <img class="lupa-white" src="./image/loupe-white.svg" alt="" width="25px" height="25px">
-                    </a>
+                    <input class="barra-de-pesquisa-text" type="text" id="text" placeholder="EX: São Paulo">
+                    <button class="barra-pesquisa-btn">
+                        <img class="lupa-blue" src="./image/loupe-white.svg" alt="" width="25px" height="25px">
+                        <img class="lupa-white" src="https://www.svgrepo.com/show/488200/find.svg" alt="" width="25px"
+                            height="25px">
+                    </button>
                 </div>
+
+               
+            </div>
+            <div class="caixa-media">
+                <h2 class="titulo-cidade">São Paulo - SP</h2>
+
+                <p class="temp">21° C</p>
+
+                <div class="caixa-menor">
+                    <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="icone do tempo">
+                    <p class="texto-previsao">Nublado</p>
+                </div>
+
+                <p class="umidade">Umidade: 76%</p>
             </div>
         </section>
     </main>
@@ -32,5 +44,4 @@
 
     </footer>
 </body>
-
 </html>

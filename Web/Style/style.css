@@ -3,28 +3,27 @@
     padding: 0px;
 }
 
-.cabecalho {
-    background-color: #50BDE4;
-    height: 187px;
-    display: flex;
-    justify-content: center;
-}
 
-.logo {
-    height: auto;
-}
-
-.imagem-do-clima {
-    background-image: url(/Web/image/QUADRADO\ PRETO\ TRANSPARENTE.png);
+body {
+    background-image: url(/Web/image/pexels-wisdomsky-1673973.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: cover;
-    height: 699px;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.imagem-do-clima{
+    background: #000;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 600px;
 }
 
 .busca-cidade {
@@ -32,7 +31,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; 
+
+  
 }
 
 .busca-cidade h1 {
@@ -43,7 +44,7 @@
 }
 
 .barra-de-pesquisa {
-    background-color: white;
+    background-color: #7c7c7c2b;
     height: 50px;
     padding: 10px;
     border-radius: 40px;
@@ -63,9 +64,10 @@
     background: none;
     border: 0;
     outline: 0;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0;
     transition: 1.5s;
+    color: #fff;
     
     width: 0;
 }
@@ -74,7 +76,9 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border-style: none;
     cursor: pointer;
+    background: none;
 
     display: flex;
     justify-content: center;
@@ -91,7 +95,7 @@
 }
 
 .barra-de-pesquisa:hover > .barra-pesquisa-btn {
-    background: #447ce7;
+    background: #aeaeae;
     transition: 1.8s;
 }
 
@@ -104,3 +108,36 @@
     transition: 1.8s;
 }
 
+.caixa-media {
+    margin-top: 30px;
+}
+
+.titulo-cidade {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.temp {
+    font-size: 20px;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+.caixa-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto-previsao{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade {
+    color:  #ffff;
+    margin-top: 20px;
+}
