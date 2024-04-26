@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-image: url(/Web/image/pexels-wisdomsky-1673973.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-do-clima{
+    background: #000;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 600px;
+}
+
+.busca-cidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+
+  
+}
+
+.busca-cidade h1 {
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   width: 700;
+   font-size: 30px;
+}
+
+.barra-de-pesquisa {
+    background-color: #7c7c7c2b;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-input-placeholder {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aeaeae;
+}
+
+.barra-de-pesquisa-text {
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    padding: 0;
+    transition: 1.5s;
+    color: #fff;
+    
+    width: 0;
+}
+
+.barra-pesquisa-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    background: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lupa-white {
+    display: none;
+}
+
+.barra-de-pesquisa:hover > .barra-de-pesquisa-text {
+    width: 500px;
+    padding-left: 20px;
+}
+
+.barra-de-pesquisa:hover > .barra-pesquisa-btn {
+    background: #aeaeae;
+    transition: 1.8s;
+}
+
+.barra-de-pesquisa:hover > .barra-pesquisa-btn .lupa-blue {
+    display: none;
+}
+
+.barra-de-pesquisa:hover > .barra-pesquisa-btn .lupa-white {
+    display: block;
+    transition: 1.8s;
+}
+
+.caixa-media {
+    margin-top: 30px;
+}
+
+.titulo-cidade {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.temp {
+    font-size: 20px;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+.caixa-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto-previsao{
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade {
+    color:  #ffff;
+    margin-top: 20px;
+}
