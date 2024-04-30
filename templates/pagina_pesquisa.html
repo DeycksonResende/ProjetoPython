@@ -15,20 +15,22 @@
             <div class="busca-cidade">
                 <h1>De qual cidade você quer ver a previsão hoje?</h1>
                 <div class="barra-de-pesquisa">
-                    <form class="barra-de-pesquisa-text" type="text" id="text" placeholder="EX: São Paulo"></form>
-                    <button class="barra-pesquisa-btn">
-                        <img class="lupa-blue" src="./image/loupe-white.svg" alt="" width="25px" height="25px">
-                        <img class="lupa-white" src="https://www.svgrepo.com/show/488200/find.svg" alt="" width="25px"
-                            height="25px">
-                    </button>
+                    <form class="barra-de-pesquisa-text" action="/" method="POST">
+                        <input type="text" name="text" placeholder="EX: São Paulo">
+                        <button type="submit" class="barra-pesquisa-btn">
+                            <img class="lupa-blue" src="./image/loupe-white.svg" alt="" width="25px" height="25px">
+                            <img class="lupa-white" src="https://www.svgrepo.com/show/488200/find.svg" alt="" width="25px" height="25px">
+                        </button>
+                    </form>
+                    
                 </div>
 
                
             </div>
             <div class="caixa-media">
-                <h2 class="titulo-cidade">São Paulo - SP</h2>
+                <h2 class="titulo-cidade">{{ weather_data.main.city }}° C</h2>
 
-                <p class="temp">21° C</p>
+                <p class="temp">{{ weather_data.main.temp|default('N/A') }}° C</p>
 
                 <div class="caixa-menor">
                     <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="icone do tempo">
