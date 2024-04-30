@@ -10,32 +10,68 @@
 
 <body>
 
+    <header class="cabecalho">
+        <img src="./image/LOGO.png" alt="">
+    </header>
+
     <main>
+
+       
+
         <section class="imagem-do-clima">
             <div class="busca-cidade">
                 <h1>De qual cidade você quer ver a previsão hoje?</h1>
-                <div class="barra-de-pesquisa">
+                <div class="barra-de-pesquisa">  
                     <input class="barra-de-pesquisa-text" type="text" id="text" placeholder="EX: São Paulo">
                     <button class="barra-pesquisa-btn">
-                        <img class="lupa-blue" src="./image/loupe-white.svg" alt="" width="25px" height="25px">
-                        <img class="lupa-white" src="https://www.svgrepo.com/show/488200/find.svg" alt="" width="25px"
+                        <img class="lupa-blue" src="./image/loupe-blue.svg" alt="" width="25px" height="25px">
+                        <img class="lupa-white" src="./image/loupe-white.svg" alt="" width="25px"
                             height="25px">
                     </button>
                 </div>
-
-               
-            </div>
-            <div class="caixa-media">
                 <h2 class="titulo-cidade">São Paulo - SP</h2>
 
-                <p class="temp">21° C</p>
+                <div class="alinhando-imagens-e-clima">
+                    <div class="imagens-nuvens">
+                        <img src="./image/image 2.png" alt="">  
+                        <h2>Manhã</h2>      
+                    </div>
+                    <div class="imagens-nuvens">
+                        <img src="./image/image 2.png" alt="">  
+                        <h2>Tarde</h2>      
+                    </div>
+                    <div class="imagens-nuvens">
+                        <img src="./image/image 2.png" alt="">  
+                        <h2>Noite</h2>      
+                    </div>
 
-                <div class="caixa-menor">
-                    <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="icone do tempo">
-                    <p class="texto-previsao">Nublado</p>
+                    <div class="temperatura-alinhamento">
+                        <div class="temperatura">
+                            <samp class="tempo">40°<h2>Máx</h2></samp> 
+                        </div>
+
+                        <div class="temperatura">
+                            <samp class="tempo">30°<h2>Min</h2></samp> 
+                        </div>   
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <p class="umidade">Umidade: 76%</p>
+        <section class="titulo-tempo">
+            <h2>Principais Notícias de São Paulo</h2>
+            <p>Acompanhe aqui as principais notícias, do Estado de São Paulo</p>
+        </section>
+
+        <section class="imagens">
+            <div class="imagem-transito">
+                <p>Trânsito em SP tem atrapalhado moradores</p>
+            </div>
+            <div class="imagem-enchente">
+                <p>Grandes enchentes em SP, confira os pontos de alagamentos</p>
+            </div>
+            <div class="imagem-sol">
+                <p>Altas temperaturas vão afetar SP</p>
             </div>
         </section>
     </main>
