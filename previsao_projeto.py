@@ -34,6 +34,5 @@ def raspa_veja():
     return render_template('pagina_pesquisa.html', resultado = "\n\n".join(noticias))
 
 
-
 if __name__ == '__main__':
     app.run(debug=True)
