@@ -3,24 +3,29 @@ import requests
 import bs4
 
 
+
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         cidade = request.form['text']
-        with open('api_keys.txt', 'r') as f:
+        with open('./ProjetoPython/api_keys.txt', 'r') as f:
             key = f.read()
-        url = f"http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={key}"
+        url = f"http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={key}&units=metric"
         print("Passou")
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()
-            return render_template('pagina_pesquisa.html', weather_data={})
+            temperatura = data["main"]
+            name = data["name"]
+            return render_template('pagina_pesquisa.html', weather_data=temperatura, nome = name)
         else:
             return "Erro ao buscar dados da API", 400
     else:
         return render_template('pagina_pesquisa.html')
+
+
 
 @app.route('/')
 def raspa_veja():
