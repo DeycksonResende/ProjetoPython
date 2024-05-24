@@ -4,54 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='Style/style.css') }}">
+    <link rel="stylesheet" href="../static/Style/style.css">
     <title>Previsão do Tempo</title>
 </head>
 
 <body>
 
+    <header class="cabecalho">
+        <img src="./image/LOGO.png" alt="">
+    </header>
+
     <main>
+
+
+
         <section class="imagem-do-clima">
             <div class="busca-cidade">
                 <h1>De qual cidade você quer ver a previsão hoje?</h1>
-                <div class="barra-de-pesquisa">
-                    <form class="barra-de-pesquisa-text" action="/" method="POST">
-                        <input type="text" name="text" placeholder="EX: São Paulo">
-                        <button type="submit" class="barra-pesquisa-btn">
-<<<<<<< HEAD
-                            <img class="lupa-blue" src="../static/image/loupe-white.svg" alt="" width="25px" height="25px">
-=======
-                            <img class="lupa-blue" src="./image/loupe-white.svg" alt="" width="25px" height="25px">
->>>>>>> a8293d9911010823ab7ac89c453ae173ad9970ff
-                            <img class="lupa-white" src="https://www.svgrepo.com/show/488200/find.svg" alt="" width="25px" height="25px">
+                <form method="POST" action="/">
+                    <div class="barra-de-pesquisa">
+                        <input class="barra-de-pesquisa-text" type="text" name="cidade" placeholder="EX: São Paulo">
+                        <button class="barra-pesquisa-btn">
+                            <img class="lupa-blue" src="../static/image/loupe-blue.svg" alt="" width="25px"
+                                height="25px">
+                            <img class="lupa-white" src="../static/image/loupe-white.svg" alt="" width="25px"
+                                height="25px">
                         </button>
-                    </form>
-                    
-                </div>
+                </form>
 
-               
             </div>
-            <div class="caixa-media">
-                <h2 class="titulo-cidade">{{ nome }}</h2>   
+            <h2 class="titulo-cidade">{{ nome }}</h2>
 
-<<<<<<< HEAD
-                <p class="temp">Agora o clima está em {{ weather_data }}° C</p>
-=======
-                <p class="temp">{{ weather_data }}° C</p>
->>>>>>> a8293d9911010823ab7ac89c453ae173ad9970ff
+            <div class="alinhando-imagens-e-clima">
+                <div class="imagens-nuvens">
+                    <h2>Pressão</h2>
+                    <samp class="estatisticas">{{ pressão }}<h2>atm</h2></samp>
+                </div>
+                <div class="imagens-nuvens">
+                    <h2>Umidade</h2>
+                    <samp class="estatisticas">{{ umidade }}<h2>%</h2></samp>
 
-                <div class="caixa-menor">
-                    <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="icone do tempo">
-                    <p class="texto-previsao">Nublado</p>
+                </div>
+                <div class="imagens-nuvens">
+                    <h2>Vel. Nuvens</h2>
+                    <samp class="estatisticas">{{ nuvens }}<h2>km/h</h2></samp>
+
                 </div>
 
-                <p class="umidade">Umidade: {{ umidade }}%</p>
+                <div class="temperatura-alinhamento">
+                    <div class="temperatura">
+                        <samp class="tempo">{{ max }}°C<h2>Máx</h2></samp>
+                    </div>
+
+                    <div class="temperatura">
+                        <samp class="tempo">{{ min }}°C<h2>Min</h2></samp>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
+
+
+
+        <section class="titulo-tempo">
+            <h2>Principais Notícias</h2>
+            <p>Acompanhe aqui as principais notícias, do Estado de São Paulo</p>
+        </section>
+
+
+        <section class="imagens">
+
+            {% for titulo, link in notícias %}
+
+            <div class="imagem-transito">
+                <a href="{{ link }}">{{ titulo }}</a>
+            </div>
+        
+            {% endfor %}
+
+        </section>
+        
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <img src="./image/LOGO.png" alt="imagem-logo" />
     </footer>
 </body>
+
 </html>
