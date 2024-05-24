@@ -37,10 +37,12 @@ def index():
                 link = conteudo.find('a').get('href')
                 noticias.append((titulo, link))
 
-            return render_template('pagina_pesquisa.html', min=temperatura_min, nome=name, max=temperatura_max, pressão=pressure, umidade=humidity, nuvens=clouds, notícias=noticias, )
+            return render_template('pagina_pesquisa.html', min=temperatura_min, nome=name, max=temperatura_max, pressão=pressure, umidade=humidity, nuvens=clouds, notícias=noticias)
         else:
             return "Erro ao buscar dados da API", 400
-    
+    else:
+        
+        return render_template('pagina_pesquisa.html')  
 
 
 if __name__ == '__main__':
