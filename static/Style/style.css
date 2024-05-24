@@ -203,7 +203,7 @@
 }
 
 .imagem-transito {
-    background-image: url("https://blog.autopecasmolina.com.br/wp-content/uploads/2013/11/Imagem-.-Caos_transito.jpg");
+    background-color:#4690a8;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -218,63 +218,20 @@
     justify-content: flex-start;
     align-items: flex-end;
     
+}
+
+
+.link-raspagem {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: auto;
+    margin-left: 10px;
 }
 
 .imagem-transito p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-
-    margin-left: 30px;
-}
-
-.imagem-enchente {
-    background-image: url("https://averdade.org.br/wp-content/uploads/2024/05/Enchente_RS_abr2024_Reuters.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    height: 35vh;
-    width: 70%;
-    padding: 10px;
-
-    border-radius: 30px;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    
-}
-
-.imagem-enchente p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-
-    margin-left: 30px;
-}
-
-.imagem-sol {
-    background-image: url("https://img.freepik.com/fotos-gratis/fechar-o-termometro-mostrando-alta-temperatura_23-2149456738.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1714176000&semt=ais");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    height: 35vh;
-    width: 70%;
-    padding: 10px;
-
-    border-radius: 30px;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    
-}
-
-.imagem-sol p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 600;

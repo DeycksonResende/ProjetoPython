@@ -68,7 +68,7 @@
 
         <section class="titulo-tempo">
             <h2>Principais Notícias</h2>
-            <p>Acompanhe aqui as principais notícias, do Estado de São Paulo</p>
+            <p>Acompanhe aqui as principais notícias do Brasil</p>
         </section>
 
 
@@ -77,7 +77,7 @@
             {% for titulo, link in notícias %}
 
             <div class="imagem-transito">
-                <a href="{{ link }}">{{ titulo }}</a>
+                <a href="{{ link }}" class="link-raspagem"> {{ titulo }}</a>
             </div>
         
             {% endfor %}
@@ -87,7 +87,7 @@
     </main>
 
     <footer class="footer">
-        <img src="./image/LOGO.png" alt="imagem-logo" />
+        <img src="../static/image/LOGO.png" alt="imagem-logo" />
     </footer>
 </body>
 
