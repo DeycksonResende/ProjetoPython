@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho {
+    background-color: #50BDE4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-do-clima {
+    background-image: url("../image/QUADRADO\ PRETO\ TRANSPARENTE.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 80vh;
+    /* Adiciona essa propriedade */
+    background-size: cover;
+    /* Adiciona essa propriedade */
+}
+
+.busca-cidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    height: 80vh;
+}
+
+.busca-cidade h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700;
+    font-size: 30px;
+}
+
+.barra-de-pesquisa {
+    background-color: #ffff;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-input-placeholder {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aeaeae;
+}
+
+.barra-de-pesquisa-text {
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    padding: 0;
+    transition: 1.5s;
+    color: black;
+
+    width: 0;
+}
+
+.barra-pesquisa-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    background: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lupa-white {
+    display: none;
+}
+
+.barra-de-pesquisa:hover>.barra-de-pesquisa-text {
+    width: 500px;
+    padding-left: 20px;
+}
+
+.barra-de-pesquisa:hover>.barra-pesquisa-btn {
+    background: #aeaeae;
+    transition: 1.8s;
+}
+
+.barra-de-pesquisa:hover>.barra-pesquisa-btn .lupa-blue {
+    display: none;
+}
+
+.barra-de-pesquisa:hover>.barra-pesquisa-btn .lupa-white {
+    display: block;
+    transition: 1.8s;
+}
+
+.caixa-media {
+    margin-top: 30px;
+}
+
+.titulo-cidade {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.temp {
+    font-size: 20px;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+.caixa-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.titulo-cidade {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alinhando-imagens-e-clima {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.imagens-nuvens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagens-nuvens h2 {
+    color: #fff;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.temperatura-alinhamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.temperatura {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tempo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFF;
+}
+
+.tempo h2 {
+    font-size: 19px;
+}
+
+.estatisticas {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    gap: 5px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFF;
+}
+
+.estatisticas h2 {
+    font-size: 19px;
+}
+
+
+
+.titulo-tempo {
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.imagens {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagem-transito {
+    background-color:#4690a8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    height: 35vh;
+    width: 70%;
+    padding: 10px;
+
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+}
+
+
+.link-raspagem {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.imagem-transito p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+
+    margin-left: 30px;
+}
+
+.titulo-tempo h2 {
+    font-size: 40px;
+    color: #50BDE4;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-tempo p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #50BDE4;
+}
+
+.footer {
+    background-color: #50BDE4;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}

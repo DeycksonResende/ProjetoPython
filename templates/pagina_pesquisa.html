@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/Style/style.css">
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="./image/LOGO.png" alt="">
+    </header>
+
+    <main>
+
+
+
+        <section class="imagem-do-clima">
+            <div class="busca-cidade">
+                <h1>De qual cidade você quer ver a previsão hoje?</h1>
+                <form method="POST" action="/">
+                    <div class="barra-de-pesquisa">
+                        <input class="barra-de-pesquisa-text" type="text" name="cidade" placeholder="EX: São Paulo">
+                        <button class="barra-pesquisa-btn">
+                            <img class="lupa-blue" src="../static/image/loupe-blue.svg" alt="" width="25px"
+                                height="25px">
+                            <img class="lupa-white" src="../static/image/loupe-white.svg" alt="" width="25px"
+                                height="25px">
+                        </button>
+                </form>
+
+            </div>
+            <h2 class="titulo-cidade">{{ nome }}</h2>
+
+            <div class="alinhando-imagens-e-clima">
+                <div class="imagens-nuvens">
+                    <h2>Pressão</h2>
+                    <samp class="estatisticas">{{ pressão }}<h2>atm</h2></samp>
+                </div>
+                <div class="imagens-nuvens">
+                    <h2>Umidade</h2>
+                    <samp class="estatisticas">{{ umidade }}<h2>%</h2></samp>
+
+                </div>
+                <div class="imagens-nuvens">
+                    <h2>Vel. Nuvens</h2>
+                    <samp class="estatisticas">{{ nuvens }}<h2>km/h</h2></samp>
+
+                </div>
+
+                <div class="temperatura-alinhamento">
+                    <div class="temperatura">
+                        <samp class="tempo">{{ max }}°C<h2>Máx</h2></samp>
+                    </div>
+
+                    <div class="temperatura">
+                        <samp class="tempo">{{ min }}°C<h2>Min</h2></samp>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <section class="titulo-tempo">
+            <h2>Principais Notícias</h2>
+            <p>Acompanhe aqui as principais notícias do Brasil</p>
+        </section>
+
+
+        <section class="imagens">
+
+            {% for titulo, link in notícias %}
+
+            <div class="imagem-transito">
+                <a href="{{ link }}" class="link-raspagem"> {{ titulo }}</a>
+            </div>
+        
+            {% endfor %}
+
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <img src="../static/image/LOGO.png" alt="imagem-logo" />
+    </footer>
+</body>
+
+</html>
