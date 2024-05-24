@@ -12,7 +12,7 @@ def index():
     if request.method == 'POST':
         # Busca de previsões do tempo
         cidade = request.form.get('cidade')
-        with open('./ProjetoPython/api_keys.txt', 'r') as f:
+        with open('api_keys.txt', 'r') as f:
             key = f.read()
         url = f"http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={key}&units=metric"
         response = requests.get(url)
